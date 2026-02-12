@@ -1,0 +1,135 @@
+* { margin 0; padding: 0pt}
+
+.banner {
+    background-color: var(--color-bannerBackground);
+    padding:10px 0;
+    margin: 0;
+}
+
+.banner nav a{
+    color: var(--color-link);
+    font-size: var(--fontSize-standard);
+    text-decoration: underline;
+}
+
+.banner button {
+    background-color: var(--color-background);
+    padding:5px;
+    width:65px;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width: 700px) {
+    .banner {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .banner nav {
+        margin-right:auto;
+    }
+
+    .banner a{padding: 1em;}
+
+    .dark {
+        margin-right:3.5vw;
+    }
+
+    .banner h1 {
+        margin-right: .5em;
+    }
+
+    .banner button {display:none;}
+}
+
+@media only screen and (max-width: 699px) {
+    .banner {
+        display:grid;
+        grid-template-columns: 1fr auto auto;
+        grid-template-rows: auto auto;
+        width: 100%;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .banner h1 {
+        grid-row: 1;
+    }
+
+    .dark {
+        grid-row: 1;
+        margin-left: auto;
+        margin-right:0.5em;
+    }
+
+    .banner button {
+        grid-row:1;
+        margin-right: 3.5vw;
+    }
+
+    .banner nav {
+        grid-row: 2;
+        grid-column: 1 / span 3;
+        margin-left: 3.5vw;
+        width:90%;
+    }
+
+    .banner a {
+        display: block;
+        padding: 0.5em 1em;
+        border-top: 1px solid black;
+    }
+    .hidden {
+        display:none;
+    }
+}
+
+
+h1 {
+    color: var(--color-headings);
+    font-family: var(--fontFamily-header);
+    font-size: 55px;
+    padding: var(--padding-header);
+}
+
+h2 {
+    color: var(--color-headings);
+    font-family: var(--fontFamily-header);
+    font-size: 40px;
+    padding: var(--padding-header);
+    margin:0;
+}
+
+h3 {
+    color: var(--color-headings);
+    font-family: var(--fontFamily-header);
+    font-size: 30px;
+    padding: var(--padding-header);
+    margin:0;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--fontFamily-standard);
+    font-size: var(--fontSize-standard);
+    margin:0;
+}
+
+
+
+dl{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: var(--padding-standard);
+}
+
+
+ul{padding: var(--padding-list);}
+p{padding: var(--padding-standard);}
+.sub h2 {font-weight: 900;}
+.sub p {font-style: italic; padding: var(--padding-standard);}
+img{padding: var(--padding-standard);}
+

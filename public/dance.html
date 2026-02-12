@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dance Subpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script type="module" src="header.mjs"></script>
+
+    <section class="sub">
+        <h2> Western Studio Dance</h2>
+        <p> This term includes styles of dance like ballet, modern, jazz, and contemporary. Some people refer to these as "all" dance forms, but we are shifting away from that term as it diminishes dance from other cultures.</p>
+    </section>
+
+    <section class="sub">
+        <h2> English Set Dancing </h2>
+        <p> This style of dance was preformed at parties in the Victorian era in England. I first tried this style of dance at the Dickens Fair in San Francisco.</p>
+    </section>
+
+    <section class="sub">
+        <h2> Swing Dancing </h2>
+        <p> By far my favorite form of dance, Swing originated in Harlem and is known for fast, fun movement with lots of flips!</p>
+    </section>
+
+    <section class="sub">
+        <h2> Social Ballroom and Latin </h2>
+        <p> This is a very broad term for the informal style of lots of ballroom dancing including waltz, hustle, night club 2 step, salsa, and bachata. </p>
+    </section>
+
+    <form action="" novalidate="novalidate" >
+        <div>
+            <label for="inputEmail">Email Address</label>
+            <input
+                    name="email"
+                    id="inputEmail"
+                    type="email"
+                    required
+                    aria-describedby="emailError"
+            />
+            <p id="emailError"></p>
+        </div>
+        <fieldset>
+            <legend>Which is your favorite style of dance?</legend>
+            <div>
+                <input type="checkbox" id="danceStyle1" name="danceStyle" value="studio" />
+                <label for="danceStyle1">Western Studio Dance</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="danceStyle2" name="danceStyle" value="englishSet" />
+                <label for="danceStyle2">English Set Dancing</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="danceStyle3" name="danceStyle" value="swing" />
+                <label for="danceStyle3">Swing Dancing</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="danceStyle4" name="danceStyle" value="social" />
+                <label for="danceStyle4">Social Ballroom and Latin</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="danceStyle5" name="danceStyle" value="other" />
+                <label for="danceStyle5">Other</label>
+            </div>
+            <p id="checkboxError"></p>
+
+        </fieldset>
+
+        <input type="submit" value="Submit!" />
+    </form>
+
+</body>
+</html>

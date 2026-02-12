@@ -1,0 +1,21 @@
+:root {
+    --color-headings: #673147;
+    --color-link: #008018;
+    --color-text: #44212F;
+    --color-background: #FDF0F2;
+    --color-bannerBackground: #FADADD;
+    --padding-standard: 0 3.5vw;
+    --padding-header: 5pt 3.5vw;
+    --padding-list: 0 5vw;
+    --fontSize-standard: 15px;
+    --fontFamily-header: "Akaya Telivigala", sans-serif;
+    --fontFamily-standard: "Google Serif", sans-serif;
+}
+
+body.dark-mode {
+    --color-headings: var(--color-text);
+    --color-bannerBackground: #101070;
+    --color-link: #ffa576;
+    --color-text: #e8ffff;
+    --color-background: #00004d;
+}
