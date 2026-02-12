@@ -17,6 +17,7 @@
     padding:5px;
     width:65px;
     border-radius: 10px;
+    color: var(--color-text);
 }
 
 @media only screen and (min-width: 700px) {
